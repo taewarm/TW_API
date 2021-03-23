@@ -3,10 +3,10 @@ var app = express();
 
 var sql = require('mssql');
 var config = {
-    user: 'taewarm',
-    password: 'a2232579!',
-    server: "taitabase.ckojwn6smtpe.ap-northeast-2.rds.amazonaws.com",
-    database: 'taewarm',
+    user: 'ID',
+    password: 'PASSWARD',
+    server: "데이터베이스DNS",
+    database: '',
     requestTimeout: 100000,
     port: 1433,
     options:{
