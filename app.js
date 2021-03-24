@@ -1,14 +1,16 @@
 var express = require('express');
 var app = express();
 
+var msdata = require('./key.js');
+
 var sql = require('mssql');
 var config = {
-    user: 'ID',
-    password: 'PASSWARD',
-    server: "데이터베이스DNS",
-    database: '',
+    user: msdata.user,
+    password: msdata.password,
+    server: msdata.server,
+    database: msdata.database,
     requestTimeout: 100000,
-    port: 1433,
+    port: msdata.port,
     options:{
         encrypt:false,
         enableArithAbort:true
